@@ -11,11 +11,7 @@ public class User {
 		this.userName = userName;
 	}
 
-	public String getPassword() {
-		return password;
+	public boolean isAuthenticated() {
+		return (userName!=null && password!=null) ? true:false;
 	}
-
-	public void setPassword(String password) {
-		this.password = password;
-	}
-}
+}	//	end  of class User
